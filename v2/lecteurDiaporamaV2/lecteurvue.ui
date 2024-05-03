@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>lecteurVue</class>
+ <widget class="QMainWindow" name="lecteurVue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>776</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>lecteurVue</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,7,1">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="rightMargin">
+         <number>525</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLabel" name="labelNumImage">
+          <property name="text">
+           <string>Numéro de l'image</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelNImage">
+          <property name="text">
+           <string>N°Image : </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labeDiapoCourant">
+          <property name="text">
+           <string>Diaporama courant :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="labelNomDiapo">
+          <property name="text">
+           <string>Nom Diapo</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="labelImage">
+          <property name="text">
+           <string>Image</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0">
+        <item>
+         <widget class="QPushButton" name="bArreter">
+          <property name="text">
+           <string>Arrêter Diaporama</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bLancer">
+          <property name="text">
+           <string>Lancer Diaporama</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bPrecedent">
+          <property name="text">
+           <string>Précédent</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bSuivant">
+          <property name="text">
+           <string>Suivant</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>776</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuParam_tres">
+    <property name="title">
+     <string>Paramètres</string>
+    </property>
+    <addaction name="vitesse_de_d_filement"/>
+    <addaction name="enlever_Diaporama"/>
+    <addaction name="ajouter_Diaporama"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="a_propos_de"/>
+   </widget>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="quitter"/>
+   </widget>
+   <addaction name="menuParam_tres"/>
+   <addaction name="menuAide"/>
+   <addaction name="menuFichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </widget>
+  <action name="vitesse_de_d_filement">
+   <property name="text">
+    <string>Vitesse de défilement</string>
+   </property>
+  </action>
+  <action name="enlever_Diaporama">
+   <property name="text">
+    <string>Enlever Diaporama</string>
+   </property>
+  </action>
+  <action name="quitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="a_propos_de">
+   <property name="text">
+    <string>A propos de...</string>
+   </property>
+  </action>
+  <action name="ajouter_Diaporama">
+   <property name="text">
+    <string>Ajouter Diaporama</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
